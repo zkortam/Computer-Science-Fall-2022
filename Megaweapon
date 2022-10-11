@@ -1,0 +1,38 @@
+import java.util.*;
+
+public class untitled{
+	public static void main(String[]args){
+	    
+	    Scanner sc = new Scanner(System.in);
+	
+	int Secretcode = 400;
+	
+	System.out.println (" Welcome to the secure Zaktonian portal. Please state the access code to recieve authorization");
+	int code = sc.nextInt();
+		sc.nextInt();
+	
+	System.out.println ("Accesscode identified.");
+	System.out.println();
+	System.out.println();
+	System.out.println();
+	System.out.println("Please state the projectile weight");
+	double x = sc.nextDouble();    // Projectile weight in KG
+	sc.nextLine();
+	System.out.println("Please state the projectile length");
+	double y = sc.nextDouble();   // Projectile length in meters
+		sc.nextLine();
+	System.out.println("Please state the launch distance");
+	double z = sc.nextDouble();   // launching distance
+		sc.nextLine();
+	System.out.println("Please state the machine's model number");
+	double m = sc.nextDouble();
+		sc.nextLine();
+    System.out.println ("Data confirmed. Please press return to proceed with the calculation");
+	
+	double Powerscale = (((0.3874922 * x) + (5 * y) + (0.4 * x * y)) / z);
+
+	
+	System.out.println ( "As determined by the Zaktonian powerscale, the strength of Megaweapon " + m + " is determined to be " + Powerscale + " ZSU");
+	
+}
+}
